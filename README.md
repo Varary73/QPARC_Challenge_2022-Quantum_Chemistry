@@ -19,7 +19,10 @@ Samura-Quanta
 Chemistry Challenge
 
 ## Project Description:
-The idea was to perform the VQE calculation on the monomers of one of the Lieb lattice. The monomer size was too large so we went with units of the monomers themselves. Benzene makes up for most of the lattice and there is the small ‘isopropyl cyanide’ (which is names nitrile). We would run the optimization and single point on these molecules and then run the single point on the reported structure of the Lieb lattice, following which we compute the binding energy.
+We present VQE calculations of ground state energy for covalent organic frameworks (sp2C-COF and sp2N-COF) molecules with the Lieb structure employing the Qamuy quantum computing software. The idea was to perform the VQE calculations on the monomers of one of the Lieb lattices (sp2C-COF reported in [B. Cui, et. al., Nat. Commun. 11, 66, (2020)]. Aromatic rings makes up for most of the lattice (as substituted pyrene) and along with the ‘ethyl cyanide’ moiety. The monomers were too large hence we went with units of the monomers themselves (benzene and isopropyl-cyanide). The reported calculations were done at the DFT level which is always accompanied with errors arising from the functional approximations. Here we propose calculations using the  VQE algorithm (optimization and then single point) for the benzene and isopropyl-cyanide units and comparing the results to MP2 level results using the  6-311G* basis sets. We could then proceed to calculate the binding energy of the sp2C-COF Lieb lattice within a certain degree of approximation.
+
+We strongly believe this approach will provide promising results which could further aid in the understanding of the real Lieb lattices. 
+
 
 ## Presentation:
 [Project Presentation link](https://docs.google.com/presentation/d/1ob_HsXh8uv0uTQEB3BnR67Nwv5oZeNjrl_mGCy8o6SI/edit?usp=sharing)
