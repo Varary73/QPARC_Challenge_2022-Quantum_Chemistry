@@ -1,0 +1,87 @@
+ansatz:
+  initial_parameter:
+  - 0.0
+  is_state_real: true
+  reference_state: RHF
+  trotter_steps: 1
+  type: UCCD
+cost_function:
+  type: SIMPLE
+mapping:
+  type: BRAVYI_KITAEV
+geometry_optimization:
+  target_state: 0
+  gradientmax: 1e-4
+  gradientrms: 1e-4
+  stepmax: 2e-2
+  steprms: 1.5e-2
+  maxsteps: 1000
+optimizer:
+  ftol: 1.0e-06
+  gtol: 1.0e-06
+  max_fev: 100000
+  max_iter: 100000
+  max_run: 100000
+  type: BFGS
+post_hf_methods:
+- type: MP2
+solver:
+  type: VQE
+target_molecule:
+  basis: sto-3g
+  charge: 0
+  geometry:
+    atoms:
+    - C
+    - N
+    - C
+    - C
+    - C
+    - H
+    - H
+    - H
+    - H
+    - H
+    - H
+    - H
+    coordinates:
+    - - -0.6217     
+      - 1.5189    
+      - -0.1484 
+    - - -0.9878     
+      - 2.5383    
+      - -0.5649 
+    - - -0.1576     
+      - 0.2253     
+      - 0.3830 
+    - - 1.3372     
+      - 0.0516     
+      - 0.1263 
+    - - -0.9491    
+      - -0.9203    
+      - -0.2427 
+    - - -0.3259     
+      - 0.2098     
+      - 1.4666 
+    - - 1.5646     
+      - 0.0609    
+      - -0.9460 
+    - - 1.9113     
+      - 0.8602     
+      - 0.5928 
+    - - 1.6959    
+      - -0.8968     
+      - 0.5405 
+    - - -2.0210    
+      - -0.8113    
+      - -0.0420 
+    - - -0.8183    
+      - -0.9520    
+      - -1.3306 
+    - - -0.6276    
+      - -1.8845     
+      - 0.1654 
+    geometry_format: CARTESIAN
+  multiplicity: 1
+  num_excited_states: 0
+  sz_number: 0
